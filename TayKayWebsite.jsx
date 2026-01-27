@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Calendar, Clock, MapPin, Star, Heart, Zap, Music, ShoppingBag, Mail, Phone, ChevronRight, Sparkles, User, LogIn, Crown, Camera, Mic, Gift, ArrowUpRight, Check, X, ChevronLeft, ChevronDown, Headphones, MessageCircle, ExternalLink, Settings, Award, History, Image, Plus, Edit, Trash2, Save, FolderOpen, Link } from 'lucide-react';
+import { Analytics } from '@vercel/analytics/react';
 
 const TayKayWebsite = () => {
   const [activeSection, setActiveSection] = useState('home');
@@ -4029,6 +4030,7 @@ const TayKayWebsite = () => {
           </div>
         </div>
       </footer>
+      <Analytics />
     </div>
   );
 };
